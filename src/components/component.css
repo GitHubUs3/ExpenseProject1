@@ -1,0 +1,39 @@
+
+.title{
+    color: red;
+}
+.title:hover{
+    color: deepskyblue;
+}
+
+.nav-item{
+    
+    display: inline;
+    padding: 8px;
+    background-color: orange;
+}
+
+.nav-item:hover{
+    color: orangered;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-item{
+    color: aliceblue;
+    margin: 0px 80px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
