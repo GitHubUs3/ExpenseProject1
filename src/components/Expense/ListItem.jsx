@@ -8,7 +8,7 @@ export const ListItem = ({e, setEmp, removeItem, setUpdate, update}) => {
     const handleDelete = async () => {
         try {
            const s = await axios.delete(`http://localhost:8080/expense-reimburse-project/list-form?id=${e.expenseId}`);
-            setEmp(e.filter((employee) => {return e.expenseId !== employee.id}));
+            setEmp(e.filter((employee) => {return e.expenseId !== employee.id}));//expenseId is the same as the id name in Expense table in mysql
             //removeItem(e.expenseId);// set update to opposite val of current update val - is bool only T or F
             if(s){// -> refresh page w/ get
                 axios.get(`http://localhost:8080/expense-reimburse-project/list-form`)
