@@ -24,9 +24,7 @@ const removeItem = (id) => {
     //update expense
     setEmp(
         emp.filter((item) => {
-  
           return item.id !== id; //return items that don't have the id passed in
-  
         }))
 }
     return (
